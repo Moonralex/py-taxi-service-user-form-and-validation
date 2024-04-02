@@ -16,6 +16,6 @@ def license_number_validator(license_number: str) -> str:
         or not license_number[:3].isupper()
         or not license_number[3:].isdigit()
     ):
-        raise ValidationError("License number format must be: \"ABC12345\"")
+        raise ValidationError('License number format must be: "ABC12345"')
 
     return license_number
